@@ -1,0 +1,26 @@
+﻿@model SpaceEmpire4XTracker.Models.TechnologyLevelViewModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TechnologyLevelViewModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.LevelNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LevelNumber)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.LevelId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
